@@ -259,7 +259,8 @@ while m:
         d = rank_unordered_list(a)
 
 clean_slate(sheet)
-b = order_array(sheet, d)
+b = order_array(sheet, c)
+
 print_array(sheet, b)
 
 col = len(b)
@@ -278,6 +279,6 @@ ft = Font(name='Dubai',
           )
 
 cell.font = ft
-cell.value = 'Animes Watched:  ' + str(len(d))
+cell.value = 'Animes Watched:  ' + str(len(c))
 
 wb.save('List of Animes.xlsx')
